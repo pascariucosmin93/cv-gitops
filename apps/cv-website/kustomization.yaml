@@ -7,4 +7,4 @@ resources:
   - service.yaml
 images:
   - name: ghcr.io/pascariucosmin93/cv-website
-    newTag: "0.0.15"
+    newTag: "0.0.1"
