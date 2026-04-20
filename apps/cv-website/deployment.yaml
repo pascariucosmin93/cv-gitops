@@ -23,6 +23,10 @@ spec:
       containers:
         - name: cv-website
           image: ghcr.io/pascariucosmin93/cv-website:0.0.1
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 101
+            allowPrivilegeEscalation: false
           imagePullPolicy: Always
           ports:
             - name: http
